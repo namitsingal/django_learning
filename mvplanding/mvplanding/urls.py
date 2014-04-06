@@ -12,7 +12,8 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-    
+    url(r'^thank-you/$','signups.views.thankyou', name='thankyou'),
+    url(r'^aboutus/$','signups.views.aboutus', name='aboutus'),
 )
 
 if settings.DEBUG:
